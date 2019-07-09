@@ -47,7 +47,6 @@
 		</pluginManagement>
 
 		<plugins>
-
 			<plugin>
 				<groupId>com.vmlens</groupId>
 				<artifactId>interleave</artifactId>
