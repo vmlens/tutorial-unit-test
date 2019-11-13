@@ -14,7 +14,7 @@
 	<pluginRepositories>
 		<pluginRepository>
 			<id>vmlens</id>
-			<url>http://vmlens.com/download</url>
+			<url>https://vmlens.com/download</url>
 		</pluginRepository>
 	</pluginRepositories>
 
@@ -29,6 +29,15 @@
 			<version>4.8.2</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>com.vmlens</groupId>
+			<artifactId>annotation</artifactId>
+			<version>1.0.3</version>
+			<scope>test</scope>
+		</dependency>
+		
+		
 	</dependencies>
 
 	<build>
@@ -50,19 +59,9 @@
 			<plugin>
 				<groupId>com.vmlens</groupId>
 				<artifactId>interleave</artifactId>
-				<version>1.0.4</version>
+				<version>1.0.8</version>
 				<configuration>
 					<trimStackTrace>false</trimStackTrace>
-					<includes>
-						<include>com.vmlens.tutorialUnitTest.ConcurrencyTestUniqueId</include>
-					</includes>
-						<interleave>
-								<group>
-									<methods>
-										<method>com.vmlens.tutorialUnitTest.UniqueId.nextId</method>
-									</methods>
-								</group>
-							</interleave>
 				</configuration>
 				<executions>
 					<execution>
@@ -77,14 +76,5 @@
 
 		</plugins>
 	</build>
-
-
-
-
-
-
-
-
-
 
 </project>

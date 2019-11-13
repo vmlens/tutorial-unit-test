@@ -1,8 +1,8 @@
 package com.vmlens.tutorialUnitTest;
 
-public class UniqueId {
+public class UniqueIdSynchronized {
 	private long counter = 0;
-	public  long nextId() {
+	public  synchronized long nextId() {
 		return counter++;	
 	}	
 }
